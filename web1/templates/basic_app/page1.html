@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+<section class="banner bg-purple text-white">
+  <div class="container text-center">
+    <h1 class="a1">YOU ARE ON &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+    <h1 class="a2">PAGE 1&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+  </div>
+</section>
+<br>
+<h2 class="a3"> We have only one outlink from this Page</h2>
+<br>
+
+
+
+<div id="wrapper">
+  <div id="wrapper-inner">
+<div id="scroll-down">
+  <span class="arrow-down">
+  </span>
+  <span id="scroll-title">
+      <a href="{% url 'basic_app:two' %}" class="button2"> Page 2 </a>
+    </span>
+
+</div>
+  </div>
+  </div>
+  <div class="container">
+
+
+  <h2 class="a3"> There is only one possiblity of clicking the link here,
+    <br> The link to the Page 2. Therefore the probablitiy would be 1.
+  <br>So we will assign weight to this link as 1.
+<br> <br> By clicking on this link , you will be redirected to Page 2.
+<br>
+<body>
+  <a href="{% url 'basic_app:demo' %}" class="button1"> Back to Demo Page </a>
+</body>
+</h2>
+</div>
+{% endblock %}

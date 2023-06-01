@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+<section class="banner bg-purple text-white">
+  <div class="container text-center">
+    <h1 class="a1">DEMONSTRATION  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</h1>
+    <br><br><br>
+  </div>
+</section>
+<div class="container">
+  <h2 class="a3">In this section we will walk you through a brief demonstration <br> of the PageRank Algorithm.
+  </h2>
+  <br> <br>
+  <img src="/static/img12.jpeg" alt="">
+  <br> <br>
+  <h2 class="a3">You might be wondering what is this image above?
+    <br>There are 5 nodes, and every node is pointing to some other nodes.
+    <br> Well, this is a nothing but a network of 5 webpages, where each node
+    <br> is a webpage and every webpage has an outlink to another WebPage.
+    <br> <br> But how do we know which webpage is the most important?
+    <br> How do we rank these pages?
+    <br>The solution of this question is given by the PageRank Algorithm.
+    <br>Click below to see how a surfer goes from a webpage to webpage and to understand that every outlink has specific weight.
+    <br>You will get redirected to Page "0" by clicking the link here.
+    <br>
+    <body>
+        <a href="{% url 'basic_app:zero' %}" class="button1">Click for Page "0"</a>
+    </body>
+    <br> <br> Did you notice how we assigned weights to every links?
+    <br>These weights can be seen as a measure for ranking of these webpages.
+    <br>So we may say the page that has more incoming links with high weight may be the most important
+    <br>But, it is not that simple, this was just a brief idea. For detailed explanation
+    <br>Please visit the PPT and Report.
+  </h2>
+</div>
+{% endblock %}

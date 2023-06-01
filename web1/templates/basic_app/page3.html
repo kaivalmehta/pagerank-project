@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+<section class="banner bg-purple text-white">
+  <div class="container text-center">
+    <h1 class="a1">YOU ARE ON &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+    <h1 class="a2">PAGE 3&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+  </div>
+</section>
+<br>
+<h2 class="a3"> We have 2 outlinks from this Page</h2>
+<br>
+
+
+
+<div id="wrapper">
+  <div id="wrapper-inner">
+<div id="scroll-down">
+  <span class="arrow-down">
+  </span>
+  <span id="scroll-title">
+      <a href="{% url 'basic_app:zero' %}" class="button2"> Page 0 </a>
+    </span>
+
+</div>
+  </div>
+  </div>
+  <div id="wrapper"
+
+    <div id="wrapper-inner">
+  <div id="scroll-down">
+    <span class="arrow-down">
+    </span>
+    <span id="scroll-title">
+        <a href="{% url 'basic_app:four' %}" class="button2"> Page 4 </a>
+      </span>
+
+  </div>
+    </div>
+    </div>
+    <div class="container">
+
+
+  <h2 class="a3"> There is a equal probablitiy for you to click on one of these links (0.5).
+  <br>So we will assign weight to each of these links that is 0.5 .
+<br> <br> By clicking on any of these links you will be redirected to the respective link.
+<br>
+<body>
+  <a href="{% url 'basic_app:demo' %}" class="button1"> Back to Demo Page </a>
+</body>
+</h2>
+  </div>
+
+{% endblock %}
